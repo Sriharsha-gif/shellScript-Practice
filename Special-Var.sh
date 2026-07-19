@@ -12,3 +12,6 @@ echo "Home Directory : $HOME"
 echo "PID of the Current Script : $$"
 sleep 3 & 
 echo "PID of theBackground Cammand Running Just Now : $!"
+wait $!
+echo "Line Number : $LINENO"
+echo "Script Executed in $SECONDS Seconds"
