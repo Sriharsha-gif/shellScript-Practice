@@ -12,4 +12,4 @@ NAMES=("Varanasi" "BOB" "MAHESH")
 echo "Names are : ${NAMES[@]}"
 echo "First Name : ${NAMES[0]}"
 echo "Second Name : ${NAMES[1]}"
-ecoho "Third Name : ${NAMES[2]}"
+echo "Third Name : ${NAMES[2]}"
