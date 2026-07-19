@@ -6,7 +6,10 @@ SUM=$(($NUM1+$NUM2))
 echo "Sum is: $SUM"
 
 ###   ARRAY  ###
-MOVIES=("Varanasi" "BOB" "MAHESH")
+NAMES=("Varanasi" "BOB" "MAHESH")
 #ndex always start from 0
 
-echo "Movies are : ${MOVIES[@]}"
+echo "Names are : ${NAMES[@]}"
+echo "First Name : ${NAMEs[0]}"
+echo "Second Name : ${NAMES[1]}"
+ecoho "Third Name : ${NAMES[2]}"
