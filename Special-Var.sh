@@ -15,4 +15,5 @@ echo "PID of theBackground Cammand Running Just Now : $!"
 wait $!
 echo "Line Number : $LINENO"
 echo "Script Executed in $SECONDS Seconds"
-echo "$RANDOM"
+echo "Random No :  $RANDOM"
+echo "Exit code : $?"
