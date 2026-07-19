@@ -8,12 +8,21 @@ if [ $USERID -ne 0 ]; then
     exit 1
 fi 
 
+
+#
+dnf list installed Mysql
+
+if [ $? -ne 0 ];then 
+
+echo "MYSQL is Already Install....SKIPPED"
+else 
 echo "Installing MySQl"
 dnf install mysql -y
 
-if [ $? -ne 0 ];then 
+if [ $? -ne 0 ]; then
 echo "Installing MYSQL is ..........Failed"
 exit 1
 else
 echo " Installing MYSQL is .........SUCCESS"
+fi
 fi
