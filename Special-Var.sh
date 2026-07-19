@@ -9,3 +9,6 @@ echo "Script Name : $0"
 echo "Who is running the Script : $USER"
 echo "Which Directory : $PWD"
 echo "Home Directory : $HOME"
+echo "PID of the Current Script : $$"
+sleep 3 & 
+echo "PID of theBackground Cammand Running Just Now : $!"
