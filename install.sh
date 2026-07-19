@@ -8,7 +8,7 @@ echo "Please run this script with root access"
 exit 1
 fi 
 
-echo " Installing MySQl"
+echo "Installing MySQl"
 dnf install mysql -y
 
 if [ $? -ne 0 ];then 
