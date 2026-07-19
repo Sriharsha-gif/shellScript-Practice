@@ -8,4 +8,4 @@ elif [ $NUMBER -eq 20 ]
     echo " Given Number $NUMBER is equal Than 20"
 else 
      echo " Given Number $NUMBER is Less Than 20"
- 
+ fi
