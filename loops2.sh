@@ -28,7 +28,8 @@ VALIDATE(){
     dnf install $package -y &..$LOGS_FILE
     VALIDATE $package $?
   else
-  echo "$package already installed..........Skipping"
+    echo "$package already installed..........Skipping"
+  
   done
 
 
