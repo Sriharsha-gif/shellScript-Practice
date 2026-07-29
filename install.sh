@@ -10,7 +10,7 @@ fi
 #1st Arg - What are you trying to install
 #2nd Arg - exit ocde
 VALIDTAE (){
-    if [ $? -ne 0 ]; then
+    if [ $2 -ne 0 ]; then
         echo "Installing MYSQL is ..........Failed"
         exit 1
 else
@@ -19,24 +19,22 @@ fi
 
 }
 
-
-#
 dnf list installed Mysql
 
-if [ $? -ne 0 ];then 
+if [ $? -eq 0 ];then 
 
 echo "MYSQL is Already Install....SKIPPED"
 else 
-echo "Installing MySQl"
+echo "Installing MySQL"
 dnf install mysql -y
 VALIDATE MYSQL $?
 fi
 
 dnf list installed nginx
 if [ $? -eq 0 ]; then
-    echo "nginx ia already installed....Skipping"
+    echo "ngnix ia already installed....Skipping"
 else
-    echo "installing ngonx"
+    echo "installing ngnix"
     dnf install ngnix -y
 VALIDATE MySQl $?
 fi
