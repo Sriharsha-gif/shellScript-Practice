@@ -29,7 +29,7 @@ VALIDATE(){
     VALIDATE $package $?
   else
     echo "$package already installed..........Skipping"
-  
+  fi
   done
 
 
